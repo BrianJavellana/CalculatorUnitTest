@@ -1,6 +1,5 @@
 package com.ecpe205;
 
-import static java.lang.Math.pow;
 
 public class Calculator {
     public double power( double x, double y){return Math.pow(x,y);}
@@ -13,4 +12,16 @@ public class Calculator {
         }
 
     }
+    public String Palindrome(String s){
+        String reverse= new StringBuffer(s).reverse().toString();
+        if(s.equals(reverse)){
+            System.out.println("Palindrome");
+        }
+        else{
+            System.out.println("not palindrome");
+        }
+
+        return reverse;
+    }
+    //https://github.com/BrianJavellana/CalculatorUnitTest
 }
